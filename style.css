@@ -19,6 +19,7 @@
     --blue-800: #0a61ae;
 }
 
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -249,7 +250,7 @@ h1{
 h2{
     font-size: 64px;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 20px;          
     text-align: center;
     padding: 20px;
     small{
@@ -266,7 +267,7 @@ h2{
 h3{
     font-size: 32px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 600; 
     line-height: 1;
     
 
