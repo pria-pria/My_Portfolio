@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: priya-dugg-portfolio
+    runtime: static
+    repo: https://github.com/pria-pria/My_Portfolio.git
+    branch: main
+    buildCommand: echo "Static portfolio ready"
+    staticPublishPath: .
+    autoDeployTrigger: commit
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
