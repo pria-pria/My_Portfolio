@@ -1,0 +1,12 @@
+{
+  "name": "priya-dugg-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve -s . -l tcp://0.0.0.0:$PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {}
+}

@@ -3,325 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio</title>
+    <title>Priya Dugg | Python Developer Portfolio</title>
+    <meta name="description" content="Portfolio dashboard for Priya Dugg, Python Developer specializing in Django, Flask, REST APIs, databases, and AI automation tooling.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts.js"></script>
-    <link rel="icon"  type="image/jpg" href="./imgs/1d1669195766115.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.png">
+    <link rel="icon" type="image/png" href="./imgs/1d1669195766115.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.png">
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="/" class="logo-holder">
-            <div class="logo"><img src="./imgs/1d1669195766115.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.png" alt="Logo" width="100"></div>
-            <div class="logo-text">Portfolio</div>
+    <header class="site-header">
+        <a href="#home" class="logo-holder" aria-label="Priya Dugg portfolio home">
+            <span class="logo"><img src="./imgs/1d1669195766115.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.png" alt="" width="44"></span>
+            <span class="logo-text">Priya Dugg</span>
         </a>
-        <nav>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <button class="theme-toggle" type="button" aria-label="Toggle dark theme" data-theme-toggle>
+                <span>Theme</span>
+            </button>
+            <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul id="menu">
-                <li>
-                    <a href="/"><img src="./imgs/icons8-home-50.png" alt="Home" width="30"></a>
-                </li> <li>
-                    <a href="#skills"><img src="./imgs/icons8-persuasion-skills-50.png" alt="Skills" width="30"></a>
-                </li>
-                <li>
-                    <a href="#projects"><img src="./imgs/icons8-projects-50.png" alt="Projects" width="30"></a>
-                </li>
-                <li>
-                    <a href="mailto:pdugg73@gmail.com"><img src="./imgs/icons8-message-50.png" alt="Send Mail" width="30"></a>
-                </li>
-            
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-                  </svg>      
-            </a>
         </nav>
     </header>
-    <main>
+
+    <main id="home">
         <section class="hero container">
-            <div class="hero-blue">
-                <div>
-                    <h1><small>Hi, I'm </small>
-                    Priya, </h1>
-                    <p>A seasoned enthusiast Full Stack Developer. 
-                        I thrive on crafting robust solutions and responsive web applications 
-                        that propel businesses forward....
-                        <span> I help awesome people to build ambitious
-                            yet accessible web projects - the wilder, the better!</span>
-                    </p>
-                    <div class="call-to-action">
-                        <a href="mailto:pdugg73@gmail.com" class="button black">
-                            Contact
-                        </a>
-                        <a href="./imgs/Priya's__CV.pdf" class="button white">
-                            View Resume
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/pria-pria">
-                            <img src="./imgs/icons8-github.svg" alt="GitHub" width="35" />
-                        </a>
-                        <a href="mailto:pdugg73@gmail.com">
-                            <img src="./imgs/email-icon.a5dd2.svg" alt="Gmail" width="35"/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/priya-d-842670303/">
-                            <img src="./imgs/icons8-linkedint3246325.svg" alt="Linkedin" width="35"/></a>
-                        </a>
+            <div class="hero-content">
+                <p class="eyebrow">Python Developer | Django | Flask | FastAPI | AI Automation</p>
+                <h1>Building useful web systems, clean APIs, and smarter workflows.</h1>
+                <p class="hero-copy">
+                    I am a results-driven Python Developer with 2+ years of experience designing, developing, and supporting scalable web applications. My work spans Django, Flask, FastAPI, REST APIs, database-backed dashboards, and AI-assisted automation for faster, cleaner delivery.
+                </p>
+                <div class="hero-actions">
+                    <a href="mailto:pdugg73@gmail.com" class="button primary">Contact Me</a>
+                    <a href="./imgs/Priya_Dugg_Resume.pdf" class="button secondary" target="_blank" rel="noopener">View Resume</a>
+                </div>
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://github.com/pria-pria" target="_blank" rel="noopener">
+                        <img src="./imgs/icons8-github.svg" alt="GitHub" width="34">
+                    </a>
+                    <a href="mailto:pdugg73@gmail.com">
+                        <img src="./imgs/email-icon.a5dd2.svg" alt="Email" width="34">
+                    </a>
+                    <a href="https://www.linkedin.com/in/priya-d-11706a320" target="_blank" rel="noopener">
+                        <img src="./imgs/icons8-linkedint3246325.svg" alt="LinkedIn" width="34">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="./imgs/portfolio.jpeg" alt="Priya Dugg" width="420">
+                <div class="availability-card">
+                    <span class="status-dot"></span>
+                    <div>
+                        <strong>Open to Python roles</strong>
+                        <p>Django, Flask, APIs, automation</p>
                     </div>
                 </div>
             </div>
-            <div class="hero-yellow">
-                <img src="./imgs/portfolio.jpeg" alt="Priya Dugg" width="70%" />
-            </div>
         </section>
-        <section class="logos container">
+
+        <section class="dashboard container" aria-label="Portfolio dashboard">
+            <article class="metric-card">
+                <span>Experience</span>
+                <strong><span class="counter" data-target="2">0</span>+ Years</strong>
+                <p>Python web development and application support</p>
+            </article>
+            <article class="metric-card">
+                <span>Backend Focus</span>
+                <strong>Django + Flask + FastAPI</strong>
+                <p>Dashboards, authentication, APIs, database workflows</p>
+            </article>
+            <article class="metric-card">
+                <span>AI Edge</span>
+                <strong>Automation Ready</strong>
+                <p>Prompting, AI tools, chatbot flows, documentation support</p>
+            </article>
+            <article class="metric-card">
+                <span>Databases</span>
+                <strong>MySQL + PostgreSQL + MongoDB</strong>
+                <p>Queries, integrations, debugging, data handling</p>
+            </article>
+        </section>
+
+        <section class="tool-strip container" aria-label="Technology stack">
             <div class="marquee">
                 <div class="track">
-
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-              
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-                    
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-                    
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-                 
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-    
-                    <img src="./imgs/reactjs.svg" alt="React" width="40" />
-                    <img src="./imgs/python-svgrepo-com.svg" alt="Python" width="70" />
-                    <img src="./imgs/css.svg" alt="CSS" width="40" />
-                    <img src="./imgs/html23465433t5rtfgfg.svg" alt="HTML" width="40" />
-                    <img src="./imgs/js-icon.4y56435ytdfbgcr45tyrd.svg" alt="JS" width="40" />
-                    <img src="./imgs/flask.svg" alt="Flask" width="30" />
-                    <img src="./imgs/icons8-vs-code.svg" alt="VS" width="40">
-                    <img src="./imgs/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-36.png" alt="Django" width="40">
-              
-                    
+                    <span>Python</span><span>Django</span><span>Flask</span><span>FastAPI</span><span>DRF</span><span>REST APIs</span><span>SQL</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Postman</span><span>GitHub</span><span>n8n</span><span>AI Integration</span><span>AI Prompts</span>
+                    <span>Python</span><span>Django</span><span>Flask</span><span>FastAPI</span><span>DRF</span><span>REST APIs</span><span>SQL</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Postman</span><span>GitHub</span><span>n8n</span><span>AI Integration</span><span>AI Prompts</span>
                 </div>
             </div>
         </section>
+
         <section class="skills container" id="skills">
-            <h2><small>About Me</small>
-                Skills</h2>
-                <div class="holder-blue">
-                    <div class="left-column">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                        </ul>
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li> REST APIs</li>
-                         
-                        </ul>
-                        <h3>Databases</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>SQLite</li>
-                        </ul>
-                        <p>Download resume to know more.....</p>
-                    </div>
-                    <div class="right-column">
-                      <h3>Aren't you the least bit curious about me?! 😬
-                    </h3>
-                      <hr>
-                      <br>
-                      <p>
-                        I bring a unique blend of skills and passions to the table, ranging from the vibrant beats of Bhangra and Gidha to the strategic 
-                        depths of chess and the simple joys of Ludo. As a teacher, I strive to inspire and engage, making learning an enjoyable journey. 
-                        My creative side shines through painting and crafting personalized cards, where I pour my heart into every detail.
- 
-                      </p>
-                      <p>In the realm of technology, I am skilled in frontend technologies like HTML, CSS, and JavaScript,
-                         including backend technologies like Python. I am proficient with frameworks such as Django and Django Rest Framework,
-                         and have experience with REST APIs. Currently, I am expanding my skill set by learning React and FastAPI.</p>
-                      <p>
-                        Effective communication and a good sense of humor are my strong suits, helping me connect with others and foster a positive environment.
-                        As a fitness enthusiast, I am committed to maintaining a healthy lifestyle and encouraging others to do the same. 
-                        I pride myself on being a quick learner, always eager to explore new ideas and innovations.
-                        I am a forward-thinking individual who believes in making life easier and more cheerful. 
-                        My curious nature drives me to continually seek knowledge and growth, both personally and professionally. With my funny and dynamic personality,
-                         I aim to propel any business forward, creating a bright and successful future.
-                      </p>
-                    </div>
-                </div>
-         
-        </section>
-        <section class="work-experience container">
-            <h2>
-                <small>
-                    Recent
-                </small>
-                Work Experience 
-            </h2>
-            <div class="jobs">
-
-                <article>
-                    <h3>Splengo - (SIT) </h3>
-                    <div>Full Stack Python Developer</div>
-                    <hr>
-                    <br>
-                    <p>At Splengo, I have had the privilege of serving as a Full Stack Developer specialising in Django Working within dynamic teams.  
-                        I was responsible for developing front-end of the web applications, including the databases,
-                        and back-end logic.
-                       </p>
+            <div class="section-heading">
+                <p class="eyebrow">Capability Map</p>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="filter-bar" role="tablist" aria-label="Skill filters">
+                <button class="filter-button active" type="button" data-skill-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-button" type="button" data-skill-filter="backend" role="tab" aria-selected="false">Backend</button>
+                <button class="filter-button" type="button" data-skill-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+                <button class="filter-button" type="button" data-skill-filter="tools" role="tab" aria-selected="false">Tools</button>
+                <button class="filter-button" type="button" data-skill-filter="ai" role="tab" aria-selected="false">AI</button>
+            </div>
+            <div class="skills-grid">
+                <article data-skill-category="backend">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                        <li>Django Rest Framework</li>
+                        <li>RESTful APIs</li>
+                        <li>API Integration</li>
+                        <li>Node.js</li>
+                    </ul>
                 </article>
-
-                <article>
-                    <h3>NetMax Pvt Ltd</h3>
-                    <div>Web Developer</div>
-                    <hr>
-                    <br>
-                    <p>In my 6 months of internship, I developed e-commerce based project in which I have built a dynamic and user-friendly online store 
-                        featuring robust "Add to Cart" functionality with real-time updates and a persistent cart,
-                         ensuring a seamless shopping experience.</p>
+                <article data-skill-category="frontend">
+                    <h3>Frontend & UI</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Layouts</li>
+                    </ul>
                 </article>
-        
+                <article data-skill-category="tools">
+                    <h3>Data & Tools</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                        <li>VS Code</li>
+                        <li>PyCharm</li>
+                        <li>Jupyter Notebook</li>
+                        <li>n8n</li>
+                    </ul>
+                </article>
+                <article class="accent-card" data-skill-category="ai">
+                    <h3>AI Automation & AI Tools</h3>
+                    <ul>
+                        <li>AI-assisted coding workflows</li>
+                        <li>AI integration</li>
+                        <li>Prompt writing and refinement</li>
+                        <li>Prompts for AI tools</li>
+                        <li>n8n workflow automation</li>
+                        <li>Chatbot flow planning</li>
+                        <li>Automated documentation support</li>
+                        <li>Data cleanup and workflow ideas</li>
+                        <li>Productivity tools for debugging and research</li>
+                    </ul>
+                </article>
             </div>
         </section>
-        <section class="bento container" id="projects">
-            <h2>
-                <small>
-                    Previous
-                </small>
-                Completed Projects
-            </h2>
-            <div class="bento-grid" >
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-04-15 010144.png" alt="Priya Dugg" width="70%" />
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-04-22 233203.png" alt="Priya Dugg" width="70%" />
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-07-03 162638.png" alt="Priya Dugg" width="70%" />
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-07-03 162656.png" alt="Priya Dugg" width="70%" />
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-04-22 233231.png" alt="Priya Dugg" width="70%" />
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/Screenshot 2024-04-22 233140.png" alt="Priya Dugg" width="70%" />
-                </a>
+
+        <section class="about container">
+            <div>
+                <p class="eyebrow">Profile</p>
+                <h2>Developer with a teacher's clarity and a builder's mindset.</h2>
+            </div>
+            <div class="about-copy">
+                <p>
+                    My background combines software development, application support, and teaching. That gives me a practical way of working: I break problems down clearly, communicate well with teams, document what matters, and keep improving workflows until the experience feels smoother.
+                </p>
+                <p>
+                    I enjoy building database-backed web apps, debugging production issues, and using AI tools thoughtfully to speed up research, documentation, code review, AI integration planning, and repetitive development tasks.
+                </p>
             </div>
         </section>
-        <section class="chatbot container">
-            <h2>
-                <small>
-                    Talk to me
-                </small>
-                ChatBot
-            </h2>
-            <div class="chatbot-blue">
-                <div class="chat-info">
-                    <h3>Azure AI Chatbot</h3>
-                    <hr>
-                    <br>
-                    <p>I've put together a chatbot here that has all the details about my skills, work experience,
-                         and even a copy of my CV/Resume. Feel free to interact with it to learn more about my professional 
-                         background.         
-                    </p>
-                    <p>I am actively seeking new opportunities, so if you have a project or role that you believe
-                        would be a great fit for me, don't hesitate to get in touch! 
-                        If you'd like to take a closer look at my resume, you can download it below.
-                    </p>
-                        <a href="./imgs/Priya's__CV.pdf" class="button black">Download Resume</a>
+
+        <section class="experience container" id="experience">
+            <div class="section-heading">
+                <p class="eyebrow">Timeline</p>
+                <h2>Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <article class="experience-item">
+                    <span>Jan 2026 - Mar 2026</span>
+                    <h3>Intelmetrics Solutions</h3>
+                    <p class="role">Python Developer</p>
+                    <p>Designed and developed a Flask-based job portal with secure role-based authentication, job posting, employer/user dashboards, signup flows, and database-backed application management.</p>
+                    <button class="text-button" type="button" data-expand-toggle>View highlights</button>
+                    <div class="experience-details" hidden>
+                        <ul>
+                            <li>Created separate employer and user dashboard flows.</li>
+                            <li>Connected authentication, job listings, and application data into one workflow.</li>
+                            <li>Focused on practical admin usability and clean database handling.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <span>Oct 2024 - Nov 2025</span>
+                    <h3>eClerx</h3>
+                    <p class="role">Full-Time</p>
+                    <p>Analyzed and resolved technical issues across applications and data workflows, documented recurring problems, and contributed to process improvements for cleaner support delivery.</p>
+                    <button class="text-button" type="button" data-expand-toggle>View highlights</button>
+                    <div class="experience-details" hidden>
+                        <ul>
+                            <li>Handled technical issue analysis across application and data workflows.</li>
+                            <li>Documented repeated problems to improve future resolution speed.</li>
+                            <li>Strengthened production support, communication, and process thinking.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <span>Nov 2022 - Aug 2024</span>
+                    <h3>Splengo Innovation and Technology</h3>
+                    <p class="role">Python Developer</p>
+                    <p>Built full-stack Django applications, implemented API integrations, optimized queries, and worked with MySQL and PostgreSQL databases.</p>
+                    <button class="text-button" type="button" data-expand-toggle>View highlights</button>
+                    <div class="experience-details" hidden>
+                        <ul>
+                            <li>Built Django features across frontend, backend, APIs, and database logic.</li>
+                            <li>Improved query behavior and worked with MySQL/PostgreSQL systems.</li>
+                            <li>Collaborated with teams in a fast-moving product environment.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <span>Sept 2021 - Oct 2022</span>
+                    <h3>DIPS Institution / Home Tuitions</h3>
+                    <p class="role">Teacher and Mentor</p>
+                    <p>Taught language subjects, prepared customized lesson plans, and strengthened communication, presentation, and mentoring skills.</p>
+                    <button class="text-button" type="button" data-expand-toggle>View highlights</button>
+                    <div class="experience-details" hidden>
+                        <ul>
+                            <li>Built strong presentation and mentoring habits.</li>
+                            <li>Adapted explanations for different learning needs.</li>
+                            <li>Developed confidence in communication-focused roles.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects container" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Project Dashboard</h2>
+            </div>
+            <div class="project-toolbar">
+                <div class="filter-bar" aria-label="Project filters">
+                    <button class="filter-button active" type="button" data-project-filter="all">All</button>
+                    <button class="filter-button" type="button" data-project-filter="flask">Flask</button>
+                    <button class="filter-button" type="button" data-project-filter="django">Django</button>
+                    <button class="filter-button" type="button" data-project-filter="dashboard">Dashboard</button>
+                    <button class="filter-button" type="button" data-project-filter="ai">AI</button>
                 </div>
+                <label class="search-box">
+                    <span>Search projects</span>
+                    <input type="search" placeholder="Search by tech or feature" data-project-search>
+                </label>
+            </div>
+            <div class="project-grid">
+                <article class="project-card featured" data-project-tags="flask fastapi sql auth dashboard job portal node.js mongodb postgres postgresql">
+                    <img src="./imgs/Screenshot 2024-07-03 162638.png" alt="Job portal dashboard screenshot">
+                    <div>
+                        <span>Flask | SQL | Auth</span>
+                        <h3>Job Portal Web App</h3>
+                        <p>Role-based job portal with employer login, user signup, secure authentication, job posting, and dashboard views for managing listings and applications.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-project-tags="django react javascript cart orders ecommerce authentication postgresql mongodb">
+                    <img src="./imgs/Screenshot 2024-04-22 233203.png" alt="E-commerce application screenshot">
+                    <div>
+                        <span>Django | Cart | Orders</span>
+                        <h3>E-Commerce Web Application</h3>
+                        <p>Django-based store with user authentication, product management, order processing, cart behavior, and database connectivity.</p>
+                    </div>
+                </article>
+                <article class="project-card" data-project-tags="dashboard api ui responsive admin ai integration n8n prompts automation">
+                    <img src="./imgs/Screenshot 2024-04-15 010144.png" alt="Dashboard application screenshot">
+                    <div>
+                        <span>Dashboard | API | AI Integration</span>
+                        <h3>Business Web Dashboard</h3>
+                        <p>Responsive interface work focused on clean navigation, data visibility, front-end polish, practical admin workflows, and AI integration opportunities.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="ai-lab container">
+            <div class="ai-panel">
+                <p class="eyebrow">AI Automation</p>
+                <h2>How I Use AI Tools</h2>
+                <div class="automation-grid">
+                    <article>
+                        <h3>Developer Productivity</h3>
+                        <p>Use AI assistants for code explanation, debugging ideas, test-case planning, refactoring support, prompt writing, and faster documentation drafts.</p>
+                    </article>
+                    <article>
+                        <h3>Workflow Automation</h3>
+                        <p>Identify repeatable steps in support, reporting, data cleanup, and admin workflows that can be simplified with scripts, n8n workflows, or AI-guided processes.</p>
+                    </article>
+                    <article>
+                        <h3>Chatbot Thinking</h3>
+                        <p>Plan portfolio and support chatbot flows, knowledge-base content, prompt structure, AI integration logic, and response quality improvements.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="education container">
+            <div class="section-heading">
+                <p class="eyebrow">Credentials</p>
+                <h2>Education & Training</h2>
+            </div>
+            <div class="education-grid">
+                <article>
+                    <h3>B.Tech, Computer Science Engineering</h3>
+                    <p>CT Group of Institutions, Jalandhar | 2017 - 2021</p>
+                    <span>CGPA: 6.65 / 10</span>
+                </article>
+                <article>
+                    <h3>Web Development Using Python, Django and Machine Learning</h3>
+                    <p>Netmax Technologies | Jan 2021 - June 2021</p>
+                    <span>Python, Django, HTML, CSS, database connectivity</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact container" id="contact">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Let's build something practical and polished.</h2>
+                <p>I am available for Python developer roles, web application work, dashboard development, API integrations, AI integrations, n8n workflows, and AI automation-focused improvements.</p>
+            </div>
+            <div class="contact-card">
+                <a href="mailto:pdugg73@gmail.com" class="button primary">pdugg73@gmail.com</a>
+                <a href="tel:+917347678079" class="button secondary">+91 73476 78079</a>
+                <button class="button secondary" type="button" data-resume-preview>Preview Resume</button>
+                <a href="./imgs/Priya_Dugg_Resume.pdf" class="button dark" download>Download Resume</a>
             </div>
         </section>
     </main>
-    
-    <script async data-id="4231233514" id="chatling-embed-script" 
-    type="text/javascript" 
-    src="https://chatling.ai/js/embed.js"></script>
-        
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const chatLog = document.getElementById('chat-log');
-                const userInput = document.getElementById('user-input');
-        
-                function appendMessage(sender, message) {
-                    const messageElement = document.createElement('li');
-                    messageElement.innerHTML = `<span class="avatar-${sender.toLowerCase()}">${sender}</span>
-                                                <div class="message">${message}</div>`;
-                    chatLog.appendChild(messageElement);
-                    chatLog.scrollTop = chatLog.scrollHeight; // Auto-scroll to the bottom
-                }
-        
-                window.sendMessage = function () {
-                    const message = userInput.value;
-                    if (message.trim() !== '') {
-                        appendMessage('You', message);
-                        userInput.value = '';
-        
-                        // Send the message to the chatbot API
-                        fetch('https://www.chatbase.co/chatbot/webhooks/v1/messages', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({
-                                chatbotId: window.embeddedChatbotConfig.chatbotId,
-                                message: message
-                            })
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            const botMessage = data.message;
-                            appendMessage('AI', botMessage);
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                            appendMessage('AI', 'Sorry, something went wrong.');
-                        });
-                    }
-                }
-            });
-        </script>    
+
+    <div class="modal" data-modal hidden>
+        <div class="modal-backdrop" data-modal-close></div>
+        <section class="modal-panel" role="dialog" aria-modal="true" aria-label="Resume preview">
+            <button class="modal-close" type="button" aria-label="Close resume preview" data-modal-close>Close</button>
+            <iframe src="./imgs/Priya_Dugg_Resume.pdf" title="Priya Dugg resume preview"></iframe>
+        </section>
+    </div>
+
+    <script async data-id="4231233514" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>
